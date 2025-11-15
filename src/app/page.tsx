@@ -1,5 +1,5 @@
 "use client";
-
+import ShaderBackground from "./components/ShaderBackground";
 import {
   PuzzlePieceIcon,
   BanknotesIcon,
@@ -73,8 +73,16 @@ export default function Home() {
               className="
               flex flex-col justify-center items-center
               text-center rounded-3xl px-5
-              bg-pink-100/50 min-h-[70vh] w-full"
+              bg-white-10 min-h-[70vh] w-full
+              relative overflow-hidden isolation-isolate"
             >
+              <ShaderBackground
+                className="absolute inset-0 -z-10 mix-blend-multiply"
+                colorRed={[0.996, 0.819, 0.858]}
+                colorBlue={[0.93, 0.88, 0.88]}
+                opacity={0.5}
+              />
+
               <h1 className="text-5xl sm:text-6xl font-black tracking-[-2px] mb-5">
                 Stop Waiting.
                 <br className="sm:hidden" /> Start Routing.
