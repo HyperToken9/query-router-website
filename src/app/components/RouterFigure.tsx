@@ -1,14 +1,14 @@
+"use client";
+
 import Image, { type StaticImageData } from "next/image";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 // Make sure these paths are correct for your project structure
-import databricksIcon from "../../public/assets/images/databricks-icon.png";
-import routerIcon from "../../public/assets/images/router-icon.png";
-import duckdbIcon from "../../public/assets/images/duckdb-icon.png";
-import sparkIcon from "../../public/assets/images/spark-icon.png";
+import databricksIcon from "~/assets/images/databricks-icon.png";
+import routerIcon from "~/assets/images/router-icon.png";
+import duckdbIcon from "~/assets/images/duckdb-icon.png";
+import sparkIcon from "~/assets/images/spark-icon.png";
 
-// --- Custom Animation Styles ---
-// We define the keyframes and glow colors here
 const animationStyles = `
   @keyframes stroke-pulse {
     from {

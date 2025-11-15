@@ -1,5 +1,5 @@
+"use client";
 // components/ShaderBackground.jsx
-
 import React, { useRef } from "react";
 import { Canvas, extend, useFrame, useThree } from "@react-three/fiber";
 import { shaderMaterial } from "@react-three/drei";
