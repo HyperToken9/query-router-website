@@ -32,6 +32,7 @@ export default function Hero() {
         </p>
 
         <MainButton
+          bounce={true}
           onClick={() => {
             window.location.href = "#your-email";
           }}
