@@ -68,6 +68,7 @@ export default function LandingForm() {
             active:ring-2 hover:ring-2 focus:ring-2 
             hover:ring-purple-200 
             focus:ring-purple-300 active:ring-purple-300
+            transition-all duration-200 ease-in-out
             py-[15px] pl-4 pr-[100px] rounded-xl"
           required
         />
