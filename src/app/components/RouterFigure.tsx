@@ -49,7 +49,7 @@ function Node({
     <div className={`${position} h-full w-full relative`}>
       {/* This is the foreground icon layer */}
       <div
-        className={`relative h-full w-full bg-white rounded-xl sm:rounded-3xl`}
+        className={`relative h-full w-full bg-white rounded-[25%] roundedxl sm:rounded3xl`}
       >
         <Image
           src={icon}
@@ -63,7 +63,7 @@ function Node({
       {/* We apply the activeColor and isGlow classes here */}
       <div
         className={`
-          absolute inset-0 h-full w-full rounded-xl sm:rounded-3xl
+          absolute inset-0 h-full w-full rounded-[25%] roundedxl sm:rounded3xl
           ${
             isGlow
               ? `opacity-100 ${activeColor} shadow-lg 

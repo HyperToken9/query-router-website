@@ -47,7 +47,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="mb-10 px-7">
+          <section className="mb-16 px-7">
             <h3 className="text-[22px] font-bold mb-4">
               Don't worry, we got that handled!
             </h3>
@@ -64,36 +64,36 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="mb-24 px-7">
-            <h3 className="font-bold text-[22px] my-5">
+          <section className="mb-8 sm:mb-24 px-7">
+            <h3 className="font-bold text-[24px] my-5">
               Your Workflow, Supercharged.
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <FeatureCard
-                icon={<PuzzlePieceIcon className="w-6" />}
+                icon={<PuzzlePieceIcon className="w-9" />}
                 title="Effortless Integration"
                 description="A seamless extension to your workflows. Get up and running in minutes!"
               />
               <FeatureCard
-                icon={<BanknotesIcon className="w-5" />}
+                icon={<BanknotesIcon className="w-8" />}
                 title="Save on Costs & Time"
                 description="Stop overpaying for idle cloud compute and waiting for spin-ups. Drastically cut bills and get instant results."
               />
               <FeatureCard
-                icon={<ChartBarIcon className="w-5" />}
+                icon={<ChartBarIcon className="w-8" />}
                 title="Real-time Analytics"
                 description="Understand exactly where your compute is used. Get instant visibility to make smarter, data-driven decisions."
               />
             </div>
           </section>
 
-          <section className="px-8">
+          <section className="sm:px-8">
             <div className="flex flex-col items-center text-center pb-[150px]">
               <h2 className="text-3xl sm:text-4xl font-black mb-4">
                 Reclaim Your Workflow.
               </h2>
-              <p className="text-base sm:text-lg mb-5 sm:px-10 px-1">
+              <p className="text-base sm:text-lg mb-2 sm:mb-8 sm:px-12 px-8">
                 Optimize your development process with intelligent query
                 routing. Get a free architecture review and see how
                 TheQueryRouter can benefit your team.
