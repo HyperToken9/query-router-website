@@ -16,7 +16,6 @@ export default function LandingForm() {
     event.preventDefault();
     setMessage(""); // Clear previous messages
     setEmail("");
-
     setLoading(true);
 
     // Send the email data to our API route
@@ -31,6 +30,8 @@ export default function LandingForm() {
 
       const data = await response.json();
       setEmail("");
+      setLoading(false);
+
       if (response.ok) {
         // Show our success "pop-up" message
         setMessage("Request sent! We'll get back to you soon.");
