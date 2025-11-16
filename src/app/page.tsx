@@ -3,13 +3,14 @@ import {
   BanknotesIcon,
   ChartBarIcon,
 } from "@heroicons/react/24/outline";
-import routerIcon from "~/assets/images/router-icon.png";
+
 import computeEngineChart from "~/assets/images/compute-engine-chart.png";
 
 import Image from "next/image";
 
-import LandingForm from "./sections/LandingForm";
 import Hero from "./sections/Hero";
+import Header from "./sections/Header";
+import LandingForm from "./sections/LandingForm";
 
 import RouterFigure from "./components/RouterFigure";
 import FeatureCard from "./components/FeatureCard";
@@ -17,33 +18,21 @@ import FeatureCard from "./components/FeatureCard";
 export default function Home() {
   return (
     <div className="max-w-screen h-5">
-      <header
-        className="flex justify-center sm:justify-start items-center py-2
-        border-neutral-200 border-b-1 "
-      >
-        <div className="flex items-center px-5">
-          <Image src={routerIcon} alt="Router Icon" width={30} height={30} />
-          <div className="ml-[10px] text-xl text-gray-900 font-bold">
-            TheQueryRouter
-          </div>
-        </div>
-        {/* <button className="ml-auto" onClick={() => console.log("WOowowo")}>
-          Plh Button
-        </button> */}
-      </header>
+      <Header />
 
-      <main className="">
+      {/* Space for header */}
+      <main className="pt-18">
         {/* Hero */}
         <div className="container mx-auto">
           <Hero />
 
-          <section className="text-4 pl-7 mb-8 sm:mb-2">
+          <section className="text-4 pl-7 mb-8 sm:mb-10">
             <h3 className="text-[22px] font-bold mb-4">
               Are you on the best compute?
             </h3>
 
             <div className="flex flex-col gap-4 md:gap-0 md:flex-row">
-              <p className="flex-2 mr-10 sm:mt-5">
+              <p className="flex-2 mr-8 sm:mt-5 text-base sm:text-xl">
                 No more defaulting to heavy-duty compute for every task. Our
                 router is smart enough to automatically route each query to the
                 right engine, so you're always on the most efficient path.
@@ -64,7 +53,7 @@ export default function Home() {
             </h3>
 
             {/* <div className="text-4"> */}
-            <p className="mb-5">
+            <p className="mb-8 text-base sm:text-xl">
               TheQueryRouter analyzes each query and intelligently routes it
               based on predefined rules. For simple tasks, it leverages your
               local machine's resources, while complex tasks are seamlessly
@@ -75,7 +64,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="mb-[60px] px-7">
+          <section className="mb-24 px-7">
             <h3 className="font-bold text-[22px] my-5">
               Your Workflow, Supercharged.
             </h3>

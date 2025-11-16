@@ -29,13 +29,14 @@ export default function LandingForm() {
       });
 
       const data = await response.json();
-      setEmail("");
+
       setLoading(false);
 
       if (response.ok) {
         // Show our success "pop-up" message
         setMessage("Request sent! We'll get back to you soon.");
         // Clear the input field
+        setEmail("");
       } else {
         // Show an error message
         setMessage(`Error: ${data.error || "Something went wrong."}`);
