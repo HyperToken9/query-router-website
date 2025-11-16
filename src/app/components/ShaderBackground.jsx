@@ -60,7 +60,7 @@ const CustomShaderMaterial = shaderMaterial(
     u_time: 0,
     u_opacity: 0.35,
     u_resolution: new THREE.Vector2(),
-    u_colorRed: new THREE.Color(0.6, 0.09, 0.08),
+    u_colorRed: new THREE.Color(0.25, 0.2, 0.15),
     u_colorBlue: new THREE.Color(0.11, 0.15, 0.2),
     u_colorWhite: new THREE.Color(1.0, 0.98, 0.9),
   },
